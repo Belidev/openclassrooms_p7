@@ -1,0 +1,108 @@
+#disconnect{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: $red-button-color;
+    color: white;
+    font-size: 0.9em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    @media (max-width: 900px) {
+        margin: 0;
+    }
+}
+
+#subscription{
+    color: white;
+    font-size: 1em;
+    background-color: $red-button-color;
+    width: 25% ;
+    height: 50px;
+    @include margin-center;
+    @include smooth-border;
+    @media (min-width: 600px) {
+        font-size: 1.2em;
+    };
+}
+#login{
+    color: white;
+    font-size: 1em;
+    background-color: $red-button-color;
+    width: 25% ;
+    height: 50px;
+    @include margin-center;
+    @include smooth-border;
+    @media (min-width: 600px) {
+        font-size: 1.2em;
+    };
+}
+
+#sendForm{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color : white;
+    background-color: $valid-color-button;
+    @include smooth-border
+}
+
+#sendComment{
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color : white;
+    background-color: $valid-color-button;
+    @include smooth-border;
+    @media (max-width: 600px) {
+        margin : $center-with-margin;
+    };
+}
+
+#deleteAdmin{
+    margin-top: 15px;
+    width: 33%;
+    padding: 5px;
+    background-color: $red-button-color;
+    color: white;
+    @include smooth-border;
+}
+
+#userProfile__boxform--button{
+    margin: 15px;
+}
+
+#DeleteArticleButton{
+    margin-top: 15px;
+    font-size: 1em;
+    width: 50%;
+    padding: 10px;
+    background-color: $red-button-color;
+    color: white;
+    @include smooth-border;
+}
+
+#lobbyButton{
+    @include top-left-position;
+    background-color: lightgray;
+    color: green;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+}
+#deleteCommentButton{
+    font-size: 0.9em;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: $red-button-color;
+    @media (max-width : 600px) {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+}

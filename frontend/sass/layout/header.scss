@@ -1,0 +1,58 @@
+header{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headerPic__box{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 600px) {
+        width: 50%;
+    };
+    &--img{
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: $mainFont-color 0px 0px 15px 5px;
+    }
+}
+.headerTitle{
+    width: 100%;
+    text-align: center;
+    color : $mainFont-color
+}
+.accueilHeader{
+    @media (max-width: 1650px) {
+        flex-direction: column;
+    }
+    &--text{
+        @media (max-width: 1650px) {
+            width: 100%;
+        }
+        @media (max-width: 1650px) {
+            width: auto;
+        }
+    }
+}
+.userMail{
+    font-weight: bolder;
+}
+.navBox{
+    position: absolute;
+    right : 20px;
+    top : 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    @media (max-width: 900px) {
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:0px;
+        right:0px;
+        justify-content: center;
+        text-align: center;
+        margin: $center-with-margin;
+    };
+}

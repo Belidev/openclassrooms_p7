@@ -1,0 +1,138 @@
+.accueilHeader{
+    display: flex;
+    &--text{
+        text-align: right;
+    }
+}
+.headerPic__box__lobby{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+#accueilHeader--userId{
+    text-align: right;
+    width: 100%;
+}
+.welcomeTitle{
+    text-align: center;
+    color: $box-background-color;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+#newArticle{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: top;
+    width: 50%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 900px) {
+        width:80%;
+    } 
+}
+#articleBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 600px;
+    margin: auto ;
+    overflow: auto;
+    @media (max-width: 600px) {
+        width: 90%;
+    } 
+    & a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        @media (min-width: 900px){
+            width: 50%;
+        }
+    }
+}
+
+.showAllArticle{
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+    justify-content: center;
+    background-color: #2d3f5e;
+    @include smooth-border;
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    } 
+}
+.postArticleArea{
+    display: flex;
+    flex-wrap: wrap;
+    &--box{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        @media (max-width: 600px){
+            flex-direction: column;
+            max-width: 300px;
+        }
+    }
+    &--article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+#sendArticle{
+    margin:auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 50px;
+    &:hover{ 
+        font-size: 1em;
+        background-color: chartreuse;
+        transition-duration: 0.3s;
+    }
+}
+@for $i from 0 through 10 {
+    .itemBox-#{$i} {
+        width: 90%;
+        min-height: 150px;
+        margin: $center-with-margin;
+        padding: 10px;
+        border-radius: 15px;
+        @include smooth-border;
+        background-color: white;
+        opacity: 1;
+        animation: fadein 1s linear;
+        transform: translatey(15px);
+        animation: itemAppear 1s;
+        animation-fill-mode: both;
+        opacity: 0;
+        animation-delay:#{$i/5}s;
+        &:hover{
+            transition-duration: 0.3s;
+            background-color: $primary-color;
+        }
+        @media (min-width : 900px){
+            height: 250px;
+            width: 80%;
+        }
+    }
+}
+.artBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 25px;
+    @media(min-width:900px){
+        width: 50%;
+    }
+}

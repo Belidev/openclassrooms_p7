@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Bienvenue sur Grouporama !</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+        </style>
+    </head>
+    <body>
+        <header class="accueilHeader">
+            <div class="headerPic__box__lobby">
+                <img class ="headerPic__box--img" src="../Groupomania_Logos/icon-above-font.png" alt="logo de groupomania"></img>
+            </div>
+            <nav class="navBox">
+                <p class="accueilHeader--text">
+                    <a href="./userprofile.html">consulter votre profil ici : <i class="fas fa-user"></i></a>
+                </p>
+                <button id="disconnect">deconnexion</button>
+                <div id="accueilHeader--userId">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="welcomeTitle">Bienvenue dans votre espace communautaire Groupomania !</h1>
+            <section class ="WriteAnArticle">
+                <form class ="postArticleArea">
+                    <div class = "postArticleArea--box">
+                        <label for="name">Votre nom:</label>
+                        <input type="text" id="name" name="name" placeholder="votre nom..." pattern="[A-Za-z]{3}" required>      
+                        <label for="firstName">Votre prénom : </label>
+                        <input type="text" id="firstName" name="firstName" placeholder="votre prénom..." pattern="[A-Za-z]{3}" required>
+                    </div>
+                    <div class ="postArticleArea--article">
+                        <label for="newArticle">Votre article : </label>
+                        <textarea id="newArticle" name="newArticle" maxlength="500" placeholder = "votre article..." required></textarea>
+                    </div>
+                    <button id ="sendArticle">Valider</button>
+                </form>
+            </section>
+            <section class ="showAllArticle">
+                <div id ="articleBox">
+
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="../js/pages/accueil.js" async defer></script>
+        <script src="../js/utils/function.js" async defer></script>
+        <script src="https://kit.fontawesome.com/1b66035faa.js" crossorigin="anonymous"></script>
+    </body>
+</html>

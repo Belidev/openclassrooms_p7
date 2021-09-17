@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Groupomania - inscrivez-vous !</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="headerPic__box">
+                <img class ="headerPic__box--img" src="../Groupomania_Logos/icon-above-font.png" alt="logo de groupomania"></img>
+            </div>  
+            <h1 class="headerTitle">Veuillez créer votre compte ! <i class="fas fa-user"></i></h1>
+        </header>
+        <main>
+            <section class ="formBox">
+                <form class="formBox__form">
+                    <div class ="formBox__form--area">
+                        <label for="name">Votre nom :</label><br>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z]{3}" required>
+                    </div>
+                    <div class="formBox__form--area">
+                        <label for="firstName">Votre prénom :</label><br>
+                        <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{3}" required>
+                    </div>
+                    <div class="formBox__form--area">
+                        <label for="email">Votre adresse mail :</label><br>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="formBox__form--area">
+                        <label for="password">Votre mot de passe :</label><br>
+                        <input type="text" id="password" name="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" required>
+                    </div>
+                    <button id ="sendForm">Valider</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="../js/pages/subscription.js" async defer></script>
+        <script src="https://kit.fontawesome.com/1b66035faa.js" crossorigin="anonymous"></script>
+    </body>
+</html>

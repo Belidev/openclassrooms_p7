@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>article et commentaires</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="accueilHeader">
+            <button id="lobbyButton"><i class="fas fa-house-user"></i></button>
+            <div class="headerPic__box__lobby">
+                <img class ="headerPic__box--img" src="../Groupomania_Logos/icon-above-font.png" alt="logo de groupomania"></img>
+            </div>
+            <nav class="navBox">
+                <p class="accueilHeader--text">
+                    <a href="./userprofile.html">consulter votre profil : <i class="fas fa-user"></i></a>
+                </p>
+                <button id="disconnect">deconnexion</button>
+                <div id="accueilHeader--userId">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class ="article">
+                <h1 class ="article--heading">voici l'article : <span id="articleNumber"></span></h1>
+                <div id="article__box">
+                    
+                </div>
+                <div id ="article__comments">
+                    
+                </div>
+                <div id ="comment__form">
+                    <form class="commentForm">
+                        <div class = "comment__form--box">
+                            <label for="commentName">Votre nom : </label>
+                            <input type="text" id="commentName" name="name" placeholder="votre nom..." pattern="[A-Za-z]{3}" required>    
+                            <label for="commentFirstName">Votre prénom : </label>  
+                            <input type="text" id="commentFirstName" name="firstName" placeholder="votre prénom..." pattern="[A-Za-z]{3}" required>
+                        </div>
+                        <div class ="comment__form--text">
+                            <label for="newComment">Votre article : </label>
+                            <textarea id="newComment" name="newArticle" maxlength="500" placeholder = "votre commentaire..." required></textarea>
+                        </div>
+                        <button id ="sendComment">Valider</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://kit.fontawesome.com/1b66035faa.js" crossorigin="anonymous"></script>
+        <script src="../js/pages/article.js" async defer></script>
+        <script src="../js/utils/lobbybutton.js" async defer></script>
+        <script src="../js/utils/function.js" async defer></script>
+    </body>
+</html>

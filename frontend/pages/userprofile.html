@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang ="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Votre profil Groupomania !</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="accueilHeader">
+            <button id="lobbyButton"><i class="fas fa-house-user"></i></button>
+            <div class="headerPic__box__lobby">
+                <img class ="headerPic__box--img" src="../Groupomania_Logos/icon-above-font.png" alt="logo de Groupomania"></img>
+            </div>
+            <nav class="navBox">
+                <button id="disconnect">deconnexion</button>
+                <div id="accueilHeader--userId">
+                </div>
+            </nav>
+        </header>
+        <main class="userPage">
+            <h1>profil de l'utilisateur : </h1>
+            <section class="userProfile">
+                <h2 class="UserProfile--title">MODIFIER VOTRE PROFIL :</h2>
+               <div class="userProfile__box">
+                   <form>
+                    <div class ="userProfile__boxform--name">
+                        <label for="name">Votre nom :</label>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z]{3}" required>
+                    </div>
+                    <div class="userProfile__boxform--firstName">
+                        <label for="firstName">Votre prénom :</label>
+                        <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{3}" required>
+                    </div>
+                    <div class="userProfile__boxform--email">
+                        <label for="email">Votre adresse mail :</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="userProfile__boxform--password">
+                        <label for="password">Votre mot de passe :</label>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                    <button id="userProfile__boxform--button">Valider</button>
+                   </form>
+               </div>
+            </section>
+            <section class="userArticle">
+                <h2 class="userArticle--title">VOS ARTICLES</h2>
+                <div class="scrollBox">
+                    <div id="userArticle">
+                    
+                    </div>
+                </div>  
+            </section>
+            <section class="userComment">
+                <h2 class="userComment--title">VOS COMMENTAIRES</h2>
+                <article id="userComment__box">
+
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://kit.fontawesome.com/1b66035faa.js" crossorigin="anonymous"></script>
+        <script src="../js/utils/lobbybutton.js"></script>
+        <script src="../js/pages/userprofile.js" async defer></script>
+        <script src="../js/utils/function.js" async defer></script>
+    </body>
+</html>

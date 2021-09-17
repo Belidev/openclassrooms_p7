@@ -1,0 +1,122 @@
+.userPage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    @media (min-width :900px){
+        margin-top: 50px;
+    }
+}
+.userArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color : $box-background-color;
+    margin-top: 25px;
+    @include smooth-border;
+    @media (min-width : 900px){
+        width: 90%;
+    }
+    &--title{
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+}
+#userComment__box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.userComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-color : $box-background-color;
+    margin-top: 25px;
+    @include smooth-border;
+    @media (min-width : 900px){
+        width: 90%;
+    }
+    &--title{
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+    &__box{
+        &__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            margin-bottom: 40px;
+            &--text{
+                background-color: white;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                @include center-with-flex;
+            }
+        }
+    }
+}
+#userArticle{
+    width: 100%;
+    height: 500px;
+    margin: $center-with-margin;
+    @media(min-width: 900px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    @media(max-width: 900px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.userProfile{
+    width: 100%;
+    text-align: center;
+    background-color: #D8D8D8;
+    @include smooth-border;
+    @media (min-width : 900px){
+        width: 600px;
+    }
+}
+.articleLink{
+   display: block;
+   width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.navBoxUserProfile{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 25px;
+}
+
+.scrollBox{
+    @include margin-center;
+    border-radius: 25px;
+    width: 95%;
+    background-color: $box-background-color;
+    filter: brightness(110%);
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    @media(max-width : 600px){
+        width: 100%;
+    }
+}

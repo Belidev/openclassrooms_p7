@@ -1,0 +1,127 @@
+.headerPic__box__article{
+    width: 50%;
+    height: auto;
+    margin : $center-with-margin;
+    text-align: center;
+    
+}
+
+#article__box{
+    margin: $light-margin;
+    width: 80%;
+    background-color : $primary-color;
+    padding: $light-padding;
+    @include smooth-border
+}
+
+@for $i from 1 through 99 {
+    .commentsBox-#{$i} {
+        width: 60%;
+        background-color: lightblue;
+        padding: $light-padding;
+        margin: $light-margin;
+        @include smooth-border;
+        @media (max-width: 600px) {
+            width: 80%;
+            margin : $center-with-margin;
+        }
+    }
+}
+
+.article{
+    padding-top: 30px;
+    &--heading{
+        font-size: 2em;
+       text-align: center;
+       color: $box-background-color
+    }
+}
+
+#article__box{
+    max-width: 900px;
+    @media (max-width: 600px) {
+        width: 90%;
+        margin : $center-with-margin;
+    }
+}
+
+.commentArea{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    @media (max-width : 600px) {
+        flex-direction: column;
+    }
+}
+.comment__form--box{
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+    }
+}
+
+.comment__form--text{
+    margin: $light-margin;
+    @media (max-width: 600px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+#article__comments{
+    margin-bottom: 50px;
+    @media (min-width:600px){
+        margin-left: 15px;
+    }
+}
+
+#comment__form{
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    width: 100%;
+    @media (max-width: 900px){
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
+.commentForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    @include smooth-border;
+    background-color: lightgray;
+    width: 50%;
+    justify-content: center;
+    @media (max-width:600px){
+        width: 100%;
+    }
+    @media (max-width : 1100px){
+        width: 90%;
+    }
+}
+.comment__form--text{
+    width: 60%;
+    height: 150px;
+    margin-bottom: 40px;
+    @media (min-width:600px){
+        margin-left: 15px;
+        height: 150px;
+    }
+    @media(max-width:600px){
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 80%;
+    }
+}
+#newComment{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
