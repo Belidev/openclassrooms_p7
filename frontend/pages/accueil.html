@@ -30,13 +30,13 @@
                 <form class ="postArticleArea">
                     <div class = "postArticleArea--box">
                         <label for="name">Votre nom:</label>
-                        <input type="text" id="name" name="name" placeholder="votre nom..." pattern="[A-Za-z]{3}" required>      
+                        <input type="text" id="name" name="name" placeholder="votre nom..." pattern="[A-Za-z]{3}" maxlength="30" required>      
                         <label for="firstName">Votre prénom : </label>
-                        <input type="text" id="firstName" name="firstName" placeholder="votre prénom..." pattern="[A-Za-z]{3}" required>
+                        <input type="text" id="firstName" name="firstName" placeholder="votre prénom..." pattern="[A-Za-z]{3}" maxlength="30" required>
                     </div>
                     <div class ="postArticleArea--article">
                         <label for="newArticle">Votre article : </label>
-                        <textarea id="newArticle" name="newArticle" maxlength="500" placeholder = "votre article..." required></textarea>
+                        <textarea id="newArticle" name="newArticle" maxlength="300" placeholder = "votre article (300 caractères maximum)" required></textarea>
                     </div>
                     <button id ="sendArticle">Valider</button>
                 </form>

@@ -89,9 +89,14 @@
 
 #lobbyButton{
     @include top-left-position;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: lightgray;
-    color: green;
-    font-size: 2em;
+    color: $lobby-button-color;
+    width: 75px;
+    height: 75px;
+    font-size: 1.1em;
     padding: 10px;
     border-radius: 50%;
 }

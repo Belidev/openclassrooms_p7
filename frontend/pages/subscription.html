@@ -19,19 +19,19 @@
                 <form class="formBox__form">
                     <div class ="formBox__form--area">
                         <label for="name">Votre nom :</label><br>
-                        <input type="text" id="name" name="name" pattern="[A-Za-z]{3}" required>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z]{3}" placeholder="30 caractères max" maxlength="30" required>
                     </div>
                     <div class="formBox__form--area">
                         <label for="firstName">Votre prénom :</label><br>
-                        <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{3}" required>
+                        <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{3}" placeholder="30 caractères max" maxlength="30" required>
                     </div>
                     <div class="formBox__form--area">
                         <label for="email">Votre adresse mail :</label><br>
-                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"required placeholder="ex : user@gmail.com">
                     </div>
                     <div class="formBox__form--area">
                         <label for="password">Votre mot de passe :</label><br>
-                        <input type="text" id="password" name="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" required>
+                        <input type="text" id="password" name="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" placeholder="1 maj, un car. spécial" required>
                     </div>
                     <button id ="sendForm">Valider</button>
                 </form>
